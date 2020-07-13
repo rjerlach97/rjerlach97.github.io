@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script src="/resources/js/script.js" async></script>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="/resources/css/index.css"/> 
+        <title>Hello, world!</title>
+        
+    </head>
+    <body>
+        <!-- Navigation Bar-->
+        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top" style="border-bottom: 4px solid #F4AF80;">
+            <div class="container-fluid">
+                <a class="navabar-brand" href="/index.html"> <!-- FALTA AQUI PONER LA REFERENCIA DEL LINK-->
+                    <img src="/resources/images/navlogo.png" style="height: 3rem; width: auto;">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button><!-- ESTE BOTON COLAPSEA JUSTAMENTE TODA LA DIVISION DE ABAJO ES PARA CUANDO EL LA PANTALLA ESTA CHICA-->
+                <div class="collapse navbar-collapse" id="navbarResponsive"> <!-- ESTA DIVISION ES LA DE LOS LINKS-->
+                    <ul class="navbar-nav ml-auto"> <!-- ml-auto EMPUJA TODOS LOS ELEMENTOS DE LA NAVBAR A LA DERECHA-->
+                      <li class="nav-item">
+                          <a class="nav-link" href="/index.html">Home</a> <!-- FALTA PONER LA REF DE EL LINK-->
+                      </li>
+                      <li class="nav-item active">
+                          <a class="nav-link" href="#">Cursos</a> <!-- FALTA PONER LA REF DE EL LINK-->
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">Contact</a> <!-- FALTA PONER LA REF DE EL LINK-->
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#">FAQ's</a> <!-- FALTA PONER LA REF DE EL LINK-->
+                      </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- MEET THE TEAM --> <!-- Aqui pusimos un extra div fluid-->
+        <div id="cursos"class="container-fluid padding" style="background: linear-gradient(217deg, #FF6095, #FFD677);">
+            <div class="container-fluid padding">
+                <div class="row welcome text-center">
+                    <div class="col-12">
+                        <h1 style="color: white; font-weight: bolder;">Conoce los grupos de nuestro campamento.</h1>
+                    </div>
+                </div>
+            </div>
+  
+            <!-- CARDS -->
+            <div class="container-fluid padding">
+                <div class="row padding justify-content-around">
+                    <div class="col-sm-12 col-md-3">
+                        <div class="card" style="border-radius: .7em; box-shadow: .7em .7em 1em 2px #00000068;">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12 justify-content-center text-center">
+                                        <i class="fas fa-walking" style="font-size: 9em; margin: 1rem; color: #ff6060;"></i>
+                                    </div>
+                                </div>
+                                <h3 class="card-title">The Walking Team</h3>
+                                <h5 class="card-text">Aqui no gateamos antes de caminar. Perfecto para niñ@s de 8 a 11 años, usando plataformas como Playgrounds y Scratch, aseguramos clases interactivas y divertidas.</h5>
+                                <br>
+                                <a href="/pages/cursos.html#walk" class="btn btn-outline-secondary">Ver Mas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3">
+                        <div class="card" style="border-radius: .7em; box-shadow: .7em .7em 1em 2px #00000068;">
+                            <img class="card-img-top" src="">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12 justify-content-center text-center">
+                                        <i class="fas fa-skating" style="font-size: 9em; margin: 1rem; color: #ff6060;"></i>
+                                    </div>
+                                </div>
+                                <h3 class="card-title">The Tonya's</h3>
+                                <h5 class="card-text">Ambiciosos desde la cuna. Ideal para chav@s de secundaria y primero de prepa. Empezamos a usar verdaderos lenguajes, ver ciencia detras, y construir juegos y programas.</h5>
+                                <br>
+                                <a href="/pages/cursos.html#skate" class="btn btn-outline-secondary">Ver Mas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3">
+                        <div class="card" style="border-radius: .7em; box-shadow: .7em .7em 1em 2px #00000068;">
+                            <img class="card-img-top" src="">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12 justify-content-center text-center">
+                                        <i class="fas fa-paper-plane" style="font-size: 9em; margin: 1rem; color: #ff6060;"></i>
+                                    </div>
+                                </div>
+                                <h3 class="card-title">The Wright Bros.</h3>
+                                <h5 class="card-text">Time to fly. No importa si tienes 25, o 16, al acabar el campamento tendras los mismos conocimientos que un estudiante de 2 año de ciencias computacionales. </h5>
+                                <br><br>
+                                <a href="/pages/cursos.html#plane" class="btn btn-outline-secondary">Ver Mas</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div class="container-fluid padding" id="walk" onclick="openFormWalk()">
+            <div class="row padding">
+                <div class="col-md-12 col-lg-8">
+                    <h2 style="font-weight: bold; padding-left: 1em;">The Walking Team</h2>
+                    <h5 style="padding-left: 1.8em;">4 Semanas - Lunes a Viernes - 2 horas y media diarias</h5>
+                    <br>
+                    <h4 style="padding-left: 1em;">
+                        Sin duda alguna el mayor beneficio de la programación es que te enseña a pensar. La forma en la que se tienen que solucionar problemas fomenta multiples formas de pensar, por esto el empezar desde una corta edad crea excelentes resultados en el desarollo academico de los estudiantes. En este curso envez de trabajar con un lenguaje de programación estructurado trabajamos con plataformas mas interactivas para niños de corta edad.
+                    </h4>
+                    <br>
+                    <h4 style="padding-left: 1em;">
+                        Entre las herramientas que usamos para mantener a nuestros alumnos entretenidos se encuentran Swift Playgrounds, Scratch, y Code.org. Estas plataformas son desarolladas por compañias como Apple e instituciones educativas como MIT con el fin de enseñar las bases de programación a alumnos de corta edad. 
+                    </h4>
+                    <br>
+                    <h4 style="padding-left: 1em;">
+                        La meta de este grupo es desarollar empezar a colocar las primeras piedras requeridas para construir los pilares base de los cuales se sostiene la programación. Aparte de esto, veras beneficios en muchas areas sobre tus hijos, es tiempo de empezar a desarollar bases academicas fuera de el colegio.
+                    </h4>
+                    <br>
+                    <a href="#" class="btn btn-primary" style="margin-left: 1.5em;">Reservar</a>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <!--<img src="" class="img-fluid"> FALTA AQUI PONER LA FOTO -->
+                    <i class="fas fa-walking" style="font-size: 15em; margin: 3rem; color: #ff6060;"></i>
+                    <br><br>
+                    <h4 style="font-weight: bold;">Edades Recomendadas: 8-11 años</h4>
+                    <br><br>
+                    <h1 style="font-weight: bolder; background: -webkit-linear-gradient(260deg, #FF6095, #FFD677); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Precio:</h1>
+                    <h1 style="font-weight: bolder; background: -webkit-linear-gradient(260deg, #FF6095, #FFD677); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">$4,000.00 MXN</h1>
+                </div>
+            </div>
+            <hr class="my-4">
+        </div>
+        <div class="container-fluid padding" id="skate" onclick="openFormSkate()">
+            <div class="row padding">
+                <div class="col-lg-4 text-center">
+                    <!--<img src="" class="img-fluid"> FALTA AQUI PONER LA FOTO -->
+                    <i class="fas fa-skating" style="font-size: 15em; margin: 3rem; color: #ff6060;"></i>
+                    <br><br><br><br>
+                    <h4 style="font-weight: bold;">Edades Recomendadas: 12-15 años</h4>
+                    <br><br><br><br>
+                    <h1 style="font-weight: bolder; background: -webkit-linear-gradient(260deg, #FF6095, #FFD677); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Precio:</h1>
+                    <h1 style="font-weight: bolder; background: -webkit-linear-gradient(260deg, #FF6095, #FFD677); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">$4,500.00 MXN</h1>
+                </div>
+                <div class="col-md-12 col-lg-8">
+                    <h2 style="font-weight: bold; padding-left: 1em;">The Tonya's</h2>
+                    <h5 style="padding-left: 1.8em;">4 Semanas - Lunes a Viernes - 2 horas y media diarias</h5>
+                    <br>
+                    <h4 style="padding-left: 1em;">
+                        Mark Zuckerberg, Elon Musk, y Steve Wozniak tienen en comun que empezaron a programar a una muy temprana edad. Aunque se piense como algo complicado, no es tan dificil programar un juego de snake o de ahogado, tampoco es tan complejo crear un codigo que guarde la contaduria de un pequeño negocio.
+                    </h4>
+                    <br>
+                    <h4 style="padding-left: 1em;">
+                        Dentro de este grupo empezaremos a trabajar con el lenguaje de programación Python, y veremos de igual forma como diseñar una pagina web sencilla. Veremos como funciona un lenguaje de programación, como puedes guardar y manejar distintas cosas, como crear funciones para hacer tareas, y como empezar a hacer programas simples que puedan ser usados.  
+                    </h4>
+                    <br>
+                    <h4 style="padding-left: 1em">
+                        Si pudieramos comparar este curso con lo que se ve en algun nivel educativa, el ejemplo perfecto seria la clase introductoria que se ve en las carreras de ingenieria. Puede sonar complejo, pero si tu hijo ya sabe multiplicar no tienes porque preocuparte.
+                    </h4>
+                    <br>
+                    <h4 style="padding-left: 1em">
+                        Aparte de todos los beneficios que tiene el grupo de The Walking Team, lo que buscamos lograr al final es crear un gusto por la programación, y dar todas las bases necesarias para que con un poco de creatividad e imaginación nuestros alumnos puedan desarollar un monton de cosas. Lo mejor a fin de cuentas es que si tu hij@ decide seguir el camino de los programadores, te agradecera el resto de su vida el haber adquirido experiencia "laboral" a una tan corta edad.
+                    </h4>
+                    <br>
+                    <a href="#" class="btn btn-primary" style="margin-left: 1.5em;">Reservar</a>
+                </div>
+            </div>
+            <hr class="my-4">
+        </div>
+        <div class="container-fluid padding" id="plane" onclick="openFormPlane()">
+            <div class="row padding">
+                <div class="col-md-12 col-lg-8">
+                    <h2 style="font-weight: bold; padding-left: 1em;">The Wright Bros.</h2>
+                    <h5 style="padding-left: 1.8em;">4 Semanas - Lunes a Viernes - 2 horas y media diarias</h5>
+                    <br>
+                    <h4 style="padding-left: 1em;">
+                        Las matematicas y la fisica estan ampliamente relacionadas a la programación y a la computación, ambas requieren una forma de pensar y de atacar problemas muy similar. Una vez que ya se llevaron cursos de matematicas y de fisica relativamente mas avanzados a aquellos de secundaria, estas listo para tomar este curso. 
+                    </h4>
+                    <br>
+                    <h4 style="padding-left: 1em;">
+                        Dentro de este grupo vamos a entrar duro a el mundo de la programación. Empezaremos a ver la ciencia detras de las computadoras, como trabajan y como guardan en su memoria distintas cosas. Veremos un montonal de lenguajes, entre ellos C++, Python, JavaScript, CSS, HTML, tambien vamos a aprender como usar la Terminal o linea de comando. Vamos a aprender distintos modelos y patrones de diseño usados al programar lo cual nos va a permitir crear programas mas complejos.
+                    </h4>
+                    <br>
+                    <h4 style="padding-left: 1em">
+                        Aparte de esto empezaremos a ver como utilizar librerias para hacer un montonal de cosas como analizar datos, automatizar procesos, navegar la web, crear aplicaciones y mucho mas.
+                    </h4>
+                    <br>
+                    <h4 style="padding-left: 1em;">
+                        Este curso va a requerir esfuerzo y tiempo, creemos que dando la logica y la ciencia detras de las cosas podemos enseñar rapidamente distintas ramas de la computación. Para el final queremos que nuestros alumnos se sientan comodos creando paginas webs, algoritmos, aplicaciones, bots, y lo que permita su imaginación, de igual forma daremos las herramientas para que al concluir, el alumna pueda aprender rapidamente cualquier otro lenguaje, sepa leer documentos, utilize estandares de codigo al escribir, y pueda adaptarse rapidamente a cualquier situación.
+                    </h4>
+                    <br>
+                    <a href="#" class="btn btn-primary" style="margin-left: 1.5em;">Reservar</a>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <!--<img src="" class="img-fluid"> FALTA AQUI PONER LA FOTO -->
+                    <i class="fas fa-paper-plane" style="font-size: 15em; margin: 3rem; color: #ff6060;"></i>
+                    <br><br><br><br>
+                    <h4 style="font-weight: bold;">Edades Recomendadas: 12-15 años</h4>
+                    <br><br><br><br>
+                    <h1 style="font-weight: bolder; background: -webkit-linear-gradient(260deg, #FF6095, #FFD677); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Precio:</h1>
+                    <h1 style="font-weight: bolder; background: -webkit-linear-gradient(260deg, #FF6095, #FFD677); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">$4,500.00 MXN</h1>
+                </div>
+            </div>
+            <hr class="my-4">
+        </div>
+
+        <div class="modal " id="myForm">
+            <div class="modal-content row">
+                <span class="close">&times;</span>
+                <form class="form-container">
+                <h1 style="font-size: 2em ;">Inscribete</h1>
+                <div class="row padding" style="padding-bottom: 0em;">
+                    <div class="col-12">
+                        <h1 style="font-size: 1em;">Deja tu numero de Whatsapp, y llena los campos siguientes, nosotros te contactamos personalmente.</h1>
+                    </div>
+                </div>
+            
+                <label for="name"><b>Nombre</b></label>
+                <input type="text" placeholder="Enter Email" id="namee" required>
+            
+                <label for="phone"><b>WhatsApp</b></label>
+                <input type="text" placeholder="Enter Password" id="contt" required>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Password" id="emmm" required>
+            
+                <button type="submit" class="btn" id="btnSub">Contactar</button>
+                </form>
+            </div>  
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <script src="https://use.fontawesome.com/releases/v5.11.0/js/all.js"></script>
+    </body>
+</html>
